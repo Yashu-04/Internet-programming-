@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Styles</title>
+    <style>
+        /* Initial styling for the text */
+        #myText {
+            background-color: red;
+            color: blue;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Text element with an ID for easy access in JavaScript -->
+<p id="myText">This is a sample text.</p>
+
+<!-- Button to toggle the styles of the text -->
+<button onclick="toggleStyles()">Toggle Styles</button>
+
+<script>
+    function toggleStyles() {
+        var text = document.getElementById("myText");
+        if (text.style.backgroundColor === "red") {
+            text.style.backgroundColor = "green";
+            text.style.color = "yellow";
+            text.style.fontSize = "12px";
+            text.style.fontWeight = "bold";
+        } else {
+            text.style.backgroundColor = "red";
+            text.style.color = "blue";
+            text.style.fontSize = "10px";
+            text.style.fontWeight = "normal";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Image</title>
+    <style>
+        /* Add some basic styling */
+        #myImage {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Image element with an ID for easy access in JavaScript -->
+<img id="myImage" src="C:\Users\Dell\Desktop\internet programming\kohli.jpg" alt="Image">
+
+<!-- Button to toggle the visibility of the image -->
+<button onclick="toggleImage()">Toggle Image</button>
+
+<script>
+    function toggleImage() {
+        var img = document.getElementById("myImage");
+        if (img.style.display === "none") {
+            // If hidden, show the image
+            img.style.display = "block";
+        } else {
+            img.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
